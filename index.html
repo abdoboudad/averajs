@@ -7,17 +7,22 @@
 </head>
 <body>
     <div id="app">
+        
+
         <h1>hello {{name}}</h1>
-        <span ref="item">take me</span>
-        <navbar/>
+        <ul>
+            <li av-loop="f in fruits">{{f}}</li>
+        </ul>
         <button onclick="tryitems()">click</button>
+        <footer1/>
     </div>
     <script src="avera-js.js"></script>
     <script>
         const app = new Averajs({
             el:"#app",
             data:{
-                name:'abdo'
+                name:'abdo',
+                fruits:["one","two"],
             }
         })
 
