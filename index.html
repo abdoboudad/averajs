@@ -11,7 +11,7 @@
 
         <h1>hello {{name}}</h1>
         <ul>
-            <li av-loop="f in fruits">{{f}}</li>
+            <li av-loop="f in fruits">{{f + "dsfsdfsd"}}</li>
         </ul>
         <button onclick="tryitems()">click</button>
         <footer1/>
@@ -26,7 +26,7 @@
             }
         })
 
-        app.data.name = 3
+        app.data.name = "rachid"
         const tryitems = ()=>{
             console.log(app.refs.item);
         }
